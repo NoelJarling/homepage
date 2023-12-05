@@ -21,6 +21,8 @@ export default function Component({ service }) {
         <Block label="watchtower.containers_scanned " />
         <Block label="watchtower.containers_updated" />
         <Block label="watchtower.containers_failed" />
+        <Block label="watchtower.scans_total" />
+        <Block label="watchtower.scans_skipped" />
       </Container>
     );
   }
@@ -38,6 +40,14 @@ export default function Component({ service }) {
       <Block
         label="watchtower.containers_failed"
         value={t("common.number", { value: watchData.watchtower_containers_failed })}
+      />
+      <Block
+        label="watchtower.scans_total"
+        value={t("common.number", { value: watchData.watchtower_scans_total })}
+      />
+      <Block
+        label="watchtower.scans_skipped"
+        value={t("common.number", { value: watchData.watchtower_scans_skipped })}
       />
     </Container>
   );
