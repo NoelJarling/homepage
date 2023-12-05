@@ -500,7 +500,9 @@
     "watchtower": {
         "containers_scanned": "Scanned",
         "containers_updated": "Updated",
-        "containers_failed": "Failed"
+        "containers_failed": "Failed",
+        "scans_total": "Total Scans",
+        "scans_skipped": "Skipped"
     },
     "autobrr": {
         "approvedPushes": "Approved",
